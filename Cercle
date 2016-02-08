@@ -1,0 +1,18 @@
+// Périmètre d'un cercle = 2 * PI * rayon
+// Aire d'un cercle = PI * rayon * rayon
+
+var r = Number(prompt("Entrez le rayon d'un cercle :"));
+
+var cercle = {};
+    cercle.perimetre = function() {
+    var calculPerimetre = 2 * Math.PI * r;
+    return calculPerimetre;
+};
+    cercle.aire = function() {
+        var calculAire = Math.PI * r * r;
+        return calculAire;
+    };
+
+console.log("Son périmètre vaut " + cercle.perimetre());
+
+console.log("Son aire vaut " + cercle.aire());
