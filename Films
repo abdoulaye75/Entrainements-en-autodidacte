@@ -1,0 +1,31 @@
+var Films = {
+    init: function(titre, annee, realisateur) {
+        this.titre = titre;
+        this.annee = annee;
+        this.realisateur = realisateur;
+    },
+    
+    decrire: function() {
+        var description = this.titre + " (" + this.annee + ", " + this.realisateur + ")";
+        return description;
+    }
+};
+
+var film1 = Object.create(Films);
+film1.init("Police Academy", 1984, "Warner Bros");
+
+var film2 = Object.create(Films);
+film2.init("Police Academy 2", 1985, "Warner Bros");
+
+var film3 = Object.create(Films);
+film3.init("Police Academy 3", 1986, "Warner Bros");
+
+var films = [];
+
+films.push(film1);
+films.push(film2);
+films.push(film3);
+
+films.forEach(function (film) {
+    console.log(film.decrire());
+});
