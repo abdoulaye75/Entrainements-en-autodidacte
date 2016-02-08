@@ -1,0 +1,62 @@
+var tour = 0; // Le nombre de tours
+
+// L'image de la case vide
+var caseVide = new Image(70, 70);
+caseVide.src = "../img/case_blanche.png";
+
+// L'image de la croix rouge
+var croixRouge = new Image(70, 70);
+croixRouge.src = "../img/croix_rouge.jpg";
+
+// L'image du rond vert
+var rondVert = new Image(70, 70);
+rondVert.src = "../img/rond_vert.png";
+
+// Alternance entre la croix et le rond
+function afficheImage(i) {
+    if (i % 2 === 0) {
+        return rondVert;
+    }
+    else {
+        return croixRouge;
+    }
+}
+
+// Une fonction qui vérifie s'il y a bien 3 ronds ou 3 croix alignés
+function verifierAlignement(a, b, c) {
+    if ((document.images[a].src) === (document.images[b].src) && (document.images[b].src) === (document.images[c].src) && (document.images[c].src !== caseVide.src)) {
+        document.getElementById("#gagnant").innerHTML = "Il y a un gagnant parmi vous !";
+        return true;
+    }
+    return false;
+}
+
+// Les combinaisons gagnantes
+function afficheGagnant() {
+    return verifierAlignement(1, 2, 3) || verifierAlignement(4, 5, 6) || verifierAlignement(7, 8, 9) || verifierAlignement(1, 4, 7) || verifierAlignement(2, 5, 8) || verifierAlignement(3, 6, 9) ||
+         verifierAlignement(1, 5, 9) || verifierAlignement(3, 5, 7);
+}
+
+// La partie en elle-même. n est le numéro de la case
+function joueCase(n) {
+    if (tour > 9) {
+    document.getElementById("#nouvelle_partie").innerHTML = "Pour rejouer, rafraîchir la page.";
+    return;
+}
+
+
+if (document.images[n].src.search(../img/case_blanche.png) !== -1) {
+       document.images[n].src = afficheImages(tour).src;
+
+        if (afficheGagnant()) {
+            tour = 10;
+        }
+        else {
+            tour++;
+            document.images["joueur_actuel"].src = afficheImages(tour).src;
+        }       
+    }
+else {
+        document.getElementById("#position_deja_jouee").innerHTML = "Position déjà jouée";
+    }
+}
