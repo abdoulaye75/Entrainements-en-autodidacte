@@ -1,0 +1,27 @@
+function calculer(a, signeArithmetique, b) {
+    var resultat;
+    switch(signeArithmetique) {
+        case "+":
+            return a + b;
+        break;
+            
+        case "-":
+            return a - b;
+        break;
+            
+        case "*":
+            return a * b;
+        break;
+            
+        case "/":
+            return a / b;
+        break;
+            
+        return resultat;    
+    }
+}
+
+console.log(calculer(4, "+", 6));
+console.log(calculer(4, "-", 6));
+console.log(calculer(2, "*", 0));
+console.log(calculer(12, "/", 0));
