@@ -1,0 +1,15 @@
+var mots = [];
+
+var saisie = "";
+
+while (saisie !== "stop") {
+    saisie = prompt("Entrez un mot ou 'stop' pour arrêter :");
+    
+    if (saisie !== "stop") {
+        mots.push(saisie);
+    }
+}
+
+mots.forEach(function(saisie) {
+    console.log(saisie);
+});
