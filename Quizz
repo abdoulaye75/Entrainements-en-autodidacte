@@ -1,0 +1,122 @@
+$(function() {
+    $(".reponse").hide();
+    
+   $("a").hover(function() {
+      $(".reponse").show();
+       
+       if ($(":radio[id='motivation']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse1").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse1").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='plaisir']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse2").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse2").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='confiance']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse3").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse3").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='perseverant']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse4").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse4").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='moi']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse5").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse5").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='patience']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse6").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse6").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='patient']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse7").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse7").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='indifferent']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse8").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse8").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='gagnant']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse9").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse9").css("color", "red");
+       }
+       
+       
+       
+       if ($(":radio[id='intelligent']:checked").val()) {
+           $("img").attr("src", "../img/coche_verte.jpg");
+           $("#reponse10").css("color", "darkgreen");
+       }
+       else {
+           $("img").attr("src", "../img/croix_rouge.jpg");
+           $("#reponse10").css("color", "red");
+       }
+   },
+        function() {
+       $(".reponse").hide();
+       $("img").each(function (){
+          $(this).attr("src", "../img/case_blanche.png");
+       });
+   }
+    );
+});
