@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title> Quizz sur le développement personnel </title>
+        
+        <meta charset="utf-8" />
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale-1"/>
+        
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-3.3.6/css/bootstrap.min.css"/>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        
+        <!-- HTML5 Shim and respond.js IE8 support of HTML5 elements and media queries -->
+         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        
+        <style type="text/css">
+            
+            #introduction {
+                text-align: center;
+                color: #000000;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            
+            span {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            
+            label {
+                font-weight: normal;
+            }
+            
+            #effacer {
+                margin-left: 20px;
+                margin-bottom: 50px;
+            }
+            
+            #valider {
+                margin-left: 30px;
+            }
+            
+            div {
+                margin-left: 30px;
+                height: 250px;
+                width: 800px;
+                background-color: aquamarine;
+                margin-bottom: 20px;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+            
+            span {
+                color: red
+            }
+            
+            .reponse {
+                text-decoration: none;
+                color: #000000;
+                font-weight: normal;
+            }
+            
+            img {
+                height: 100px;
+                width: 100px;
+            }
+            
+        </style>
+        
+    </head>
+        
+        <body>
+            
+          <p id="introduction"> Voici un petit test pour savoir comment vous percevez la réussite et la motivation. </p>
+            
+            
+<form>
+    
+    <div> <span> 1. Pour vous, quelle est la clé de la réussite ? </span> <br />
+        <input type="radio" name="facteur_de_reussite" value="a" id="motivation" /> <label for="motivation"> a. La motivation </label> <br />
+        <input type="radio" name="facteur_de_reussite" value="b" id="talent" /> <label for="talent"> b. Le talent </label> <br />
+        <input type="radio" name="facteur_de_reussite" value="c" id="chance" /> <label for="chance"> c. La chance </label> <br /> <br />
+        
+        <span class="reponse" id="reponse1"> C'est surtout la motivation bien sûr. La chance se provoque quelque peu, non ? </span>
+        <img src="../img/case_blanche.png" id="img1" />
+    </div>
+    
+
+    <div> <span> 2. Pour avancer, qu'est-ce qui compte le plus pour vous ? </span> <br />
+        <input type="radio" name="ce_qui_compte" value="a" id="plaisir" /> <label for="plaisir"> a. Je fais ce qui me plaît </label> <br />
+        <input type="radio" name="ce_qui_compte" value="b" id="possibilite" /> <label for="possibilite"> b. Je fais ce qu'il m'est possible de faire, peu importe si ça me plaît ou non </label> <br />
+        <input type="radio" name="ce_qui_compte" value="c" id="avis_exterieur" /> <label for="avis_exterieur"> c. Je fais ce que les autres pensent ce qui serait bon pour moi </label> <br /> <br />
+        
+        <span class="reponse" id="reponse2"> En faisant quelque chose qui nous plaît, on va tenir dans la durée. A l'inverse, on baisse les bras très vite. </span>
+        <img src="../img/case_blanche.png" id="img2" />
+    </div>
+    
+
+    <div> <span> 3. Comment appréhendez-vous les épreuves que vous allez traverser ? </span> <br />
+        <input type="radio" name="epreuve" value="a" id="confiance" /> <label for="confiance"> a. Je crois en mon potentiel </label> <br />
+        <input type="radio" name="epreuve" value="b" id="suffisance" /> <label for="suffisance"> b. Je traverse les épreuves et puis c'est tout </label> <br />
+        <input type="radio" name="epreuve" value="c" id="peur" /> <label for="peur"> c. Je les redoute et je cherche à les contourner </label> <br /> <br />
+        
+        <span class="reponse" id="reponse3"> Les épreuves font parties de la vie. Pas moyen d'y échapper. </span>
+        <img src="../img/case_blanche.png" id="img3" />
+    </div>
+    
+
+    <div> <span> 4. Si par malheur votre objectif n'est pas atteint, que faites-vous ? </span> <br />
+        <input type="radio" name="echec" value="a" id="perseverant" /> <label for="perseverant"> a. J'apprends de mes erreurs et je me bats jusqu'au bout </label> <br />
+        <input type="radio" name="echec" value="b" id="changement" /> <label for="changement"> b. Je passe à tout autre chose </label> <br />
+        <input type="radio" name="echec" value="c" id="fataliste" /> <label for="fataliste"> c. Je me résigne, j'abandonne tout </label> <br /> <br />
+        
+        <span class="reponse" id="reponse4"> "De l'échec naît la réussite", comme on dit. </span>
+        <img src="../img/case_blanche.png" id="img4" />
+    </div>
+    
+
+    <div> <span> 5. Selon vous, qui crée votre propre réussite ? </span> <br />
+        <input type="radio" name="acteur_de_la_reussite" value="a" id="moi" /> <label for="moi"> a. Moi et moi seul </label> <br />
+        <input type="radio" name="acteur_de_la_reussite" value="b" id="moi et les autres" /> <label for="moi et les autres"> b. Moi et le monde extérieur </label> <br />
+        <input type="radio" name="acteur_de_la_reussite" value="c" id="les autres" /> <label for="les autres"> c. Le monde extérieur </label> <br /> <br />
+        
+        <span class="reponse" id="reponse5"> Les autres ne peuvent pas agir pour nous ! </span>
+        <img src="../img/case_blanche.png" id="img5" />
+    </div>
+    
+    
+    <div> <span> 6. Comment réagissez-vous quand vos objectifs tardent à se réaliser ? </span> <br/>    
+        <input type="radio" name="reaction" value="a" id="patience" /> <label for="patience"> a. Je prends mon mal en patience </label> <br/>
+        <input type="radio" name="reaction" value="b" id="impatience" /> <label for="impatience"> b. Après la date butoir, j'arrête </label> <br/>
+        <input type="radio" name="reaction" value="c" id="impatience" /> <label for="impatience"> c. Je perds patience et j'arrête de perdre du temps </label> <br/> <br />
+        
+        <span class="reponse" id="reponse6"> On ne peut pas tout avoir tout de suite. </span>
+        <img src="../img/case_blanche.png" id="img6" />
+    </div>
+    
+    
+    <div> <span> 7. Êtes-vous du genre à tout vouloir tout de suite ? </span> <br/>
+        <input type="radio" name="patient" value="a" id="patient" /> <label for="patient"> a. Non, étape par étape </label> <br/>
+        <input type="radio" name="patient" value="b" id="faux_patient" /> <label for="faux_patient"> b. Si possible, oui </label> <br/>
+        <input type="radio" name="patient" value="c" id="impatient" /> <label for="impatient"> c. Oui, je suis de nature impatient </label> <br/> <br />
+        
+        <span class="reponse" id="reponse7"> L'impatience est dans la nature humaine, mais la précipitation est mauvaise conseillère </span>
+        <img src="../img/case_blanche.png" id="img7" />
+    </div>
+    
+    
+    <div> <span> 8. Vous comparez-vous sans cesse aux autres ? </span> <br/>
+        <input type="radio" name="comparaison" value="a" id="indifferent" /> <label for="indifferent"> a. Les autres, ce sont les autres. Moi, c'est moi </label> <br/>
+        <input type="radio" name="comparaison" value="b" id="guerrier" /> <label for="guerrier"> b. Ca peut parfois me stimuler </label> <br/>       
+        <input type="radio" name="comparaison" value="c" id="faible" /> <label for="faible"> c. Oui, et ça affaiblit mon estime de soi </label> <br/> <br />
+        
+        <span class="reponse" id="reponse8"> Chaque humain est unique. Il faut s'accepter tel qu'on est. Pourquoi vouloir ressembler à tout le monde ? Les autres ne sont pas forcément des modèles. </span>
+        <img src="../img/case_blanche.png" id="img8" />
+    </div>
+    
+    
+    <div> <span> 9. Considérez-vous les autres comme des obstacles à votre réussite ? </span> <br/>
+        <input type="radio" name="ennemis" value="a" id="gagnant" /> <label for="gagnant"> a. Je ne permets à personne de me freiner </label> <br/>
+        <input type="radio" name="ennemis" value="b" id="irregulier" /> <label for="irregulier"> b. Parfois, je m'en sors gagnant, parfois les autres arrivent à m'arrêter </label> <br/> 
+        <input type="radio" name="ennemis" value="c" id="perdant" /> <label for="perdant"> c.Oui, et ces obstacles me freinent tout le temps </label> <br/> <br />
+        
+        <span class="reponse" id="reponse9"> Si vous laissez les autres vous arrêter, vous ne ferez rien dans la vie ! </span>
+        <img src="../img/case_blanche.png" id="img9" />
+    </div>
+    
+    
+    <div> <span> 10. Vous arrive-t-il d'être jaloux de ceux qui réussissent bien ? </span> <br/>
+        <input type="radio" name="envie" value="a" id="intelligent" /> <label for="intelligent"> a. Non, je m'en inspire </label> <br/>
+        <input type="radio" name="envie" value="b" id="battant" /> <label for="battant"> b. Oui, mais je tente ma chance </label> <br/>
+        <input type="radio" name="envie" value="c" id="envieux" /> <label for="envieux"> c. Oui, j'ai envie qu'ils tombent, ça me soulagerait </label> <br/> <br />
+        
+        <span class="reponse" id="reponse10"> Il vaut mieux s'en inspirer ! Envier les autres n'améliore pas votre situation actuelle ! </span>
+        <img src="../img/case_blanche.png" id="img10" />
+    </div>
+    
+<a href=""> Tester mes réponses </a>    
+<input type="reset" value="Tout annuler" id="effacer" name="effacer" />
+    
+            </form>
+        
+            <script src="../js/jquery-2.1.4.min.js" type="text/javascript"> </script>
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"> </script>
+            <script src="../css/bootstrap-3.3.6/js/bootstrap.min.js" type="text/javascript"> </script>
+            <script src="../js/quizz.js" type="text/javascript"> </script>
+            
+        </body>
+</html>
